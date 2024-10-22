@@ -64,6 +64,7 @@ fn main() -> ExitCode {
         Ok(_x) => {
             return ExitCode::from(0);
         }
+        
         Err(e) => {
             eprintln!("Error: {}", e);
             return ExitCode::from(2);
